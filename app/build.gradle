@@ -5,7 +5,7 @@ android {
 //    buildToolsVersion "24.0.0" // added
     defaultConfig {
         applicationId "com.example.rainer.myapp"
-        minSdkVersion 15
+        minSdkVersion 18
         targetSdkVersion 25
         versionCode 1
         versionName "1.0"
@@ -28,7 +28,7 @@ android {
 }
 
 dependencies {
-    implementation 'com.android.support:support-annotations:25.0.0' // added
+    implementation 'com.android.support:support-annotations:25.4.0' // added
 
     androidTestImplementation 'tools.fastlane:screengrab:1.2.0' // added
 //    androidTestImplementation('tools.fastlane:screengrab:2.99.1'){
@@ -50,6 +50,10 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+
+//    androidTestImplementation('com.android.support.test.espresso:espresso-core:3.0.1', {
+//        exclude group: 'com.android.support', module: 'support-annotations'
+//    })
 
 //    implementation fileTree(dir: 'libs', include: ['*.jar'])
 //    implementation 'com.android.support:appcompat-v7:26.0.0'
