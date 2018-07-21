@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MyApp</string>
+    <string name="action_settings">Einstellungen</string>
+    <string name="hello_world">Hallo Welt!</string>
+    <string name="localisation_text">Diese App ist im Moment auf Deutsch eingestellt.</string>
+</resources>

@@ -9,11 +9,21 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import android.content.res.Configuration;
+import java.util.Locale;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        // localisation
+//        Locale locale = new Locale("de");
+//        Configuration config = getBaseContext().getResources().getConfiguration();
+//        config.locale = locale;
+//        getBaseContext().getResources().updateConfiguration(config, getBaseContext().getResources().getDisplayMetrics());
+
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
